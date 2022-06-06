@@ -17,11 +17,22 @@ const styles = {
     alignItems: "center",
     width: "fit-content",
     borderRadius: "12px",
-    backgroundColor: "rgb(244, 244, 244)",
+    backgroundColor: "#f37da2",
     cursor: "pointer",
   },
   text: {
-    color: "#21BF96",
+    color: "#fff",
+    fontSize: "1.1rem",
+  },
+  customDiv: {
+    background: "rgb(86, 86, 255)",
+    borderRadius: "3rem",
+    display: "flex",
+    width: "150%",
+    height: "3rem",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
   },
   connector: {
     alignItems: "center",
@@ -53,7 +64,9 @@ function Account() {
     return (
       <>
         <div onClick={() => setIsAuthModalVisible(true)}>
-          <p style={styles.text}>Authenticate</p>
+          <div style={styles.customDiv}>
+            <p style={styles.text}>Connect&nbsp;&nbsp;Wallet</p>
+          </div>
         </div>
         <Modal
           visible={isAuthModalVisible}
@@ -105,22 +118,6 @@ function Account() {
 
   return (
     <>
-      {/* <button
-        onClick={async () => {
-          try {
-            console.log("change")
-            await web3._provider.request({
-              method: "wallet_switchEthereumChain",
-              params: [{ chainId: "0x38" }],
-            });
-            console.log("changed")
-          } catch (e) {
-            console.error(e);
-          }
-        }}
-      >
-        Hi
-      </button> */}
       <div style={styles.account} onClick={() => setIsModalVisible(true)}>
         <p style={{ marginRight: "5px", ...styles.text }}>
           {getEllipsisTxt(account, 6)}

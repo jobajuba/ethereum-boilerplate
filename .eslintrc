@@ -31,5 +31,8 @@
     "react/jsx-key": "off",
     "react/no-unescaped-entities": "off",
     "linebreak-style": 0,
+    "prettier/prettier": ["error",{
+      "endOfLine": "auto"}
+    ]
   }
 }

@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 ul[class],
@@ -32,6 +33,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: white;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 ul[class],
@@ -41,6 +43,7 @@ ol[class] {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
 img {
